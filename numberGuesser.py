@@ -1,5 +1,8 @@
-# Ideas: Add a feature to let the user know that they need to go
-#       higher or lower on their guess
+'''
+Ideas:
+    -Add message for too high or too low on guesses
+    -Add menu system (play again?, change range?, etc.)
+'''
 
 import random
 
