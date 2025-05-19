@@ -25,4 +25,9 @@ def play_game():
         print(f"The number was {random_number}")
         
 # Call function to run the game
-play_game()
+while True:
+    try:
+        play_game()
+        break
+    except:
+        print("Something went wrong!")
