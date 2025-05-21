@@ -1,6 +1,5 @@
 '''
 Ideas:
-    -Add message for too high or too low on guesses
     -Add menu system (play again?, change range?, etc.)
 '''
 
@@ -20,6 +19,10 @@ def play_game():
 
     # Keep game going while user's guess is not random number
     while user_guess != random_number:
+        if user_guess > random_number:
+            print("Too high.")
+        if user_guess < random_number:
+            print("Too low.")
         print("Guess again.")
         user_guess = int(input(f"Guess a number 1 - {range_max}: "))
     else:
